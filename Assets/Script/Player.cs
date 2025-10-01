@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
     private Rigidbody2D rb;
@@ -50,4 +50,7 @@ public class Movement : MonoBehaviour
         float newVelocity = rb.linearVelocity.magnitude - drag * Time.fixedDeltaTime;
         rb.linearVelocity = rb.linearVelocity.normalized * newVelocity;
     }
+
+
+    public void move() { }
 }
